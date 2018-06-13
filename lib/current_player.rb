@@ -12,10 +12,10 @@ def current_player(board)
   filled = turn_count(board)
   if filled % 2 = 0
     return "X"
-  else 
+  else
     return "O"
   end
 end
 
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-turn_count(board)
+current_player(board)
