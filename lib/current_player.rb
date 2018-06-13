@@ -5,10 +5,17 @@ def turn_count(board)
       filled += 1
     end
   end
-  puts filled
+  return filled
 end
+
 def current_player(board)
-  puts "Oh hi Mark"
+  filled = turn_count(board)
+  if filled % 2 = 0
+    return "X"
+  else 
+    return "O"
+  end
 end
+
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 turn_count(board)
